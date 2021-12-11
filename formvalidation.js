@@ -67,12 +67,12 @@ function PasswordStrength(){
     var sreg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
     var mreg = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
     if(sreg.test(user)){
-        document.getElementById("strength").innerHTML = '<span style="color:red;">Weak</span>';
+        document.getElementById("strength").innerHTML = '<span style="color:green;">Strong</span>';
     }
     else if(mreg.test(user)){
         document.getElementById("strength").innerHTML = '<span style="color:yellow;">Medium</span>';
     }
     else{
-        document.getElementById("strength").innerHTML = '<span style="color:green;">Strong</span>';
+        document.getElementById("strength").innerHTML = '<span style="color:red;">Weak</span>';
     }
 }
