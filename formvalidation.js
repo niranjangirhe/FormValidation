@@ -70,7 +70,7 @@ function PasswordStrength(){
         document.getElementById("strength").innerHTML = '<span style="color:green;">Strong</span>';
     }
     else if(mreg.test(user)){
-        document.getElementById("strength").innerHTML = '<span style="color:yellow;">Medium</span>';
+        document.getElementById("strength").innerHTML = '<span style="color:orange;">Medium</span>';
     }
     else{
         document.getElementById("strength").innerHTML = '<span style="color:red;">Weak</span>';
